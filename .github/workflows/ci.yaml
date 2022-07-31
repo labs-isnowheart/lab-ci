@@ -35,7 +35,7 @@ jobs:
     needs: build
     steps:
     - name: Run an one-line script
-      run: npm cache clean -f && rm -rf node_modules && npm i
+      run: npm cache clean -f && rm -rf node_modules && npm init -y
   deploy-prd:
     runs-on: ubuntu-latest
     environment:
