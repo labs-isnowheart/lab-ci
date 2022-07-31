@@ -1,7 +1,26 @@
 {
+  "name": "lab-ci",
+  "version": "1.0.0",
+  "description": "",
+  "main": "math.go",
+  "dependencies": {},
   "devDependencies": {
-    "cz-conventional-changelog": "3.3.0"
+    "cz-conventional-changelog": "^3.3.0"
   },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "go run ./math.go"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/labs-isnowheart/lab-ci.git"
+  },
+  "author": "Edgar Santos <isnowheart@icloud.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/labs-isnowheart/lab-ci/issues"
+  },
+  "homepage": "https://github.com/labs-isnowheart/lab-ci#readme",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
