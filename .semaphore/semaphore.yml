@@ -1,0 +1,3 @@
+promotions:
+  - name: Deploy to Heroku
+    pipeline_file: heroku.yml
