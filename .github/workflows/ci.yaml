@@ -27,20 +27,3 @@ jobs:
 
     - name: Test
       run: go test -v
-
-  deploy-dev:
-    runs-on: ubuntu-latest
-    environment:
-      name: dev
-    needs: build
-    steps:
-    - name: Run an one-line script
-      run: npm cache clean -f && rm -rf node_modules && npm init -y
-  deploy-prd:
-    runs-on: ubuntu-latest
-    environment:
-      name: prd
-    needs: deploy-dev
-    steps:
-    - name: Run an one-line script
-      run: npm init
