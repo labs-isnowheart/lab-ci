@@ -35,7 +35,7 @@ jobs:
     needs: build
     steps:
     - name: Run an one-line script
-      run: npm start
+      run: start .
   deploy-prd:
     runs-on: ubuntu-latest
     environment:
@@ -43,4 +43,4 @@ jobs:
     needs: deploy-dev
     steps:
     - name: Run an one-line script
-      run: npm start
+      run: start .
